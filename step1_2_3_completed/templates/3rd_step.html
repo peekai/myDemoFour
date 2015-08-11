@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>3rd step</title>
+        <link rel="stylesheet" href="../css/myCSS.css">
+        <script src="https://fb.me/react-0.13.3.js"></script>
+        <script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css"> 
+    </head>
+
+<body>
+
+<div id="replacedContent"></div>
+<script type="text/jsx">
+/** @jsx React.DOM **/
+var EmailPage = React.createClass({
+render: function() {
+var option = /[&?]option=([^&]+)/.exec(location.search);
+option = option ? option[1].replace(/"/g, '&quot;') : '';
+//alert(option);
+
+$(document).ready(function() {
+	$(window).load(function(){
+	$('.boxes').hide();
+	$('.' + option).show();
+});
+});
+
+return (
+
+ <div className="wrapper">
+ 	<div className="ContainerLeft">
+ 		<div className="Left">
+                <ul className="List">
+                <li><input type="button" value="Inbox 3"></input></li>                
+		<li><input type="button" value="Spam 0"></input></li>
+		</ul>
+                </div>
+        </div>
+ 	<div className="ContainerRight">
+    		<div className="Right boxes One">
+    			<table>
+    			<tr>
+    			<td>From:Jill_Smith@reactjs.com</td>
+                        </tr>
+                        <tr> 
+    			<td>Subject:Meeting minutes</td>		
+    			</tr>
+    			</table>
+               </div>
+		<div className="boxes One">
+       		<p> The meeting minutes are given below             
+       		</p>
+		</div>
+       
+       		<div className="Right boxes Two">
+			<table>
+    			<tr>
+    			<td>From:Eve_Peak@reactjs.com</td>
+                        </tr>
+                        <tr> 
+    			<td>Subject:Your request has been approved</td>		
+    			</tr>
+    			</table>
+		</div>
+		<div className="boxes Two">
+		<p> This is the second email. Your request has been approved. </p>
+       		</div>
+       		<div className="Right boxes Three">
+			<table>
+    			<tr>
+    			<td>From:John_William@trywin.com</td>
+                        </tr>
+                        <tr> 
+    			<td>Subject:You just won!</td>		
+    			</tr>
+    			</table>
+		</div>
+		<div className="boxes Three">
+		<p> This is the third email. Congratulations! You just won a prize!. </p>
+       		</div>               
+       </div>
+ </div>
+);
+}
+});
+
+React.render(
+  <EmailPage  />,
+  document.getElementById('replacedContent'));
+
+
+</script>    
+</body>
+</html>

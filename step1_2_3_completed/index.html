@@ -1,0 +1,45 @@
+<!doctypeHTML>
+<!-- index.html -->
+<html>
+  <head>
+    <title>Hello React</title>
+    <script src="https://fb.me/react-0.13.3.js"></script>
+    <script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" href="css/myCSS.css">
+  </head>
+  <body>
+    <div id="replacedContent">this content will be replaced by what is given inside the script</div>
+<script type="text/jsx">
+/** @jsx React.DOM **/
+var FormElement = React.createClass({
+myLogin: function (event) {
+    event.preventDefault();
+    location.href = 'templates/2nd_step.html';
+  },
+  render: function() {
+    return (
+     <section className="mySectionWrapper">
+     <form className="myForm" onSubmit={this.myLogin}>
+     {this.props.children}
+     <h2>Login</h2> 	
+     <dl>
+     <dt>Username</dt>
+     <dd><input type ="text" className="userName" value="pk"></input> </dd>
+     <dt>Password</dt>
+     <dd><input type ="password" className="myPassword" value="SomePassword"></input> </dd>
+     <dt><button type ="submit" className="btn-submitButton">Submit</button> </dt>  
+     </dl>
+     </form>
+     </section>
+    );
+  }
+});
+React.render(
+  <FormElement />,
+  document.getElementById('replacedContent'));
+
+</script>
+
+  </body>
+</html>

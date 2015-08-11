@@ -1,0 +1,175 @@
+{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*BODY*/
+body {
+	background: #eee;
+	color: #444;
+	-webkit-font-smoothing: antialiased;
+	font-family: Arial, Helvetica, Geneva, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	height: auto !important;
+	height: 100%;
+	line-height: 2.9em;
+	min-height: 100%;
+        }
+
+h2 {
+	color: rgb(34,34,34);
+	font-size: 2.2em;	
+	font-weight: 200;
+	margin: 0 0 24px 0;
+}
+
+/*BUTTON DESIGN*/
+[class*='btn-'] {
+	border: none;
+	border-bottom: 2px solid rgba(0,0,0,.15);
+	border-top: 1px solid rgba(255,255,255,.15);
+	border-radius: 3px;
+	color: #fff;
+	display: inline-block;
+	font: -webkit-small-control;
+	font-size: .7em;
+	letter-spacing: 1px;
+	line-height: 140%;
+	padding: 10px 20px;
+	text-decoration: none;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+	text-transform: uppercase;
+		
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	  transition: all 0.1s linear;
+}
+
+.btn-submitButton {
+		background-color: rgb(255,255,255);
+		border-radius: 4px;
+		border: 1px solid rgb( 186, 186, 186 );
+		color: rgb( 186, 186, 186 );
+		text-shadow: 0 1px 1px rgba(255, 255, 255, 1);
+               	}
+
+.btn-submitButton:hover {
+			background-color: #4195fc;
+			border: 1px solid rgba(0,0,0,.1);
+			color: rgb(255,255,255);
+			cursor: pointer;
+			text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+		}
+.btn-submitButton:active {
+			box-shadow: 0 1px 1px rgba(0,0,0,0.15) inset;
+			text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+		}
+
+/*SECTION CONTAINER*/
+.mySectionWrapper {
+	background-color: rgb(255,255,255);
+	border: 1px solid rgba(0,0,0,.15);
+	border-radius: 4px;
+	box-shadow: 0 1px 0 rgba(255,255,255,0.2) inset, 0 0 4px rgba(0,0,0,0.2);
+	margin: 40px auto; /*aligns center*/
+	padding: 24px;
+	width: 500px;
+}
+
+/*FORM*/
+.myForm {
+	display: block;
+	margin: 6px 0;
+        line-height: 35px;
+}
+
+.myForm input[type="text"],
+.myForm input[type="password"]
+	{
+		background-color: rgb(255,255,255);
+		border: 1px solid rgb( 186, 186, 186 );
+		border-radius: 2px;
+		-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.08);
+		-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.08);
+		  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.08);
+		display: block;
+		font-size: 14px;
+		margin-top: -5px;
+                margin-bottom: 12px;
+                margin-left: -40px;
+                margin-right: 0;
+		padding: 8px;	
+		text-shadow: 0 1px 1px rgba(255, 255, 255, 1);
+		width: 90%;
+                		
+		-webkit-transition: all 0.1s linear;
+		-moz-transition: all 0.1s linear;
+		-o-transition: all 0.1s linear;
+		  transition: all 0.1s linear;
+	}
+	
+.wrapper{
+	width:98%;
+        height: 98%;
+	margin-left:10px;
+        padding: 0;
+        border: 3px double #000000;
+        display: block;
+        float: left;
+        position: absolute;
+        top: 0;       
+}
+.ContainerLeft {
+	width: 14.75%;
+    	height: 99%;
+    	display: block;
+    	padding-left: 15px;
+   	margin: 0;
+    	position: absolute;
+    	top: 0;
+    	float: left;
+        border: 3px double rgb(176,176,176);
+           }
+
+.ContainerRight {
+	width: 83%;
+    	height: 99%;
+    	margin-left: 16.45%;
+	border: 3px double rgb(176,176,176);
+	border-left: 3px double #000000;
+        padding: 0;
+    	margin-right: 0;
+    	position: absolute;
+    	top: 0;
+    	float: left;
+           
+}
+.Right {
+     	border-bottom: 3px double #000000;
+     	padding: 0;
+     	margin: 0;
+        background: #F8F8F8;
+.Left {
+    	float: left;
+    	display: block;
+        line-height: 5px;
+}
+
+.List {
+    	list-style-type:none;
+    	padding-left: 0;
+    	margin-left: 0;
+}
+
+
+
+
+
+
